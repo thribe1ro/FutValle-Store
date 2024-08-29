@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+:root {
+    --font-times : "Freeman", sans-serif;
+    --font-time-color: #fff;
+}
+
+main {
+    height: 50vh;
+}
+
+#content-team {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #24284f;
+    background: -webkit-linear-gradient(0deg, #24284f 0%, rgba(255, 255, 255, 0.14) 50%, #24284f 100%);
+    background: linear-gradient(0deg, #24284f 0%, rgba(255, 255, 255, 0.14) 50%, #24284f 100%);
+}
+
+#select-teams {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 6rem 0;
+    height: 10rem;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+#content-brasileirao {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.content-bra {
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.content-bra:hover {
+    margin-top: -1rem;
+}
+
+.content-pl {
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.content-pl:hover {
+    margin-top: -1rem;
+}
+
+.content-selecao {
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.content-selecao:hover {
+    margin-top: -1rem;
+}
+
+.brasileirao {
+    width: 15rem;
+    height: 14rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.premier-league {
+    width: 15rem;
+    height: 14rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.selecoes {
+    width: 15rem;
+    height: 14rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+/* SUBIR LETRA BRASILEIRAO */
+#subirletra-brasileirao {
+    display: none;
+    color: var(--font-time-color);
+    font-family: var(--font-times);
+}
+
+#subirletra-brasileirao:hover {
+    margin: -14rem 0 0 4rem;
+}
+
+.subirletra-brasileirao {
+    display: none;
+    margin: -15rem 0 0 4rem;
+    position: absolute;
+    color: var(--font-time-color);
+    font-family: var(--font-times);
+}
+
+/* SUBIR LETRA PREMIER LEAGUE */
+
+#subirletra-pl {
+    display: none;
+    color: var(--font-time-color);
+    font-family: var(--font-times);
+}
+
+#subirletra-pl:hover {
+    margin: -14rem 0 0 3.5rem;
+}
+
+.subirletra-pl {
+    display: none;
+    margin: -14rem 0 0 3.5rem;
+    position: absolute;
+    color: var(--font-time-color);
+    font-family: var(--font-times);
+}
+
+/* SUBIR LETRA SELEÇÕES */
+
+#subirletra-selecoes {
+    display: none;
+    color: var(--font-time-color);
+    font-family: var(--font-times);
+}
+
+#subirletra-selecoes:hover {
+    margin: -14rem 0 0 5.5rem;
+}
+
+.subirletra-selecoes {
+    display: none;
+    margin: -14rem 0 0 5.5rem;
+    position: absolute;
+    color: var(--font-time-color);
+    font-family: var(--font-times);
+}
+
+
+/* Brasileirão */
+
+#brasileirao-active {
+    display: none;
+    width: 50%;
+    margin: auto;
+    height: 9vh;
+    background: #ff0000;
+    border-radius: 10px 10px 0 0;
+}
+
+#brasileirao-white {
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 7px 5px #930103;
+}
+
+#img-teams {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: .2rem;
+}
+
+
+#fla, #flu, #sccp, #sep, #spfc, #santos, #redbull {
+    width: 4.5rem;
+    height: 4.5rem;
+    cursor: pointer;
+}
+
+/* Premier League */
+
+#premierleague-active {
+    display: none;
+    width: 50%;
+    margin: auto;
+    height: 10vh;
+    background: #ff0000;
+    border-radius: 10px 10px 0 0;
+}
+
+#premierleague-white {
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 7px 5px #930103
+}
+
+#img-teams-pl {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: .2rem;
+}
+
+/* Seleções */
+
+#selecoes-active {
+    display: none;
+    width: 50%;
+    margin: auto;
+    height: 10vh;
+    background: #ff0000;
+    border-radius: 10px 10px 0 0;
+}
+
+#selecoes-white {
+    width: 100%;
+    height: 5rem;
+    background: #fff;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 7px 5px #930103
+}
+
+#img-teams-sel {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: .2rem;
+}
+
+/* GERAL*/
+#brasileirao-content-spfc, #brasileirao-content-fla, #brasileirao-content-flu, #brasileirao-content-sccp, #brasileirao-content-sep, #brasileirao-content-sfc, #brasileirao-content-redbull {
+    display: none;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 50vh;
+    margin-top: .6rem;
+    background-color: #F8080B;
+    box-shadow: 1px 2px 10px 0px #000;
+}
+
+
+#content-img-team-spfc, #content-img-team-fla, #content-img-team-flu, #content-img-team-sccp, #content-img-team-sep, #content-img-team-sfc, #content-img-team-redbull {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+.highlight-shirts-squares {
+    width: 16rem;
+    height: 20rem;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    background-size: cover;    
+}
+
+#content-img-team-spfc-quadrado, #content-img-team-fla-quadrado, #content-img-team-flu-quadrado, #content-img-team-sccp-quadrado, #content-img-team-sep-quadrado, #content-img-team-sfc-quadrado, #content-img-team-redbull-quadrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    background: #fff;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 15px 0 #00000054;
+}
+
+#btn-abrir {
+    position: relative;
+    font-size: 15pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Sarabun", sans-serif;
+    background: #24284F;
+    border: none;
+    border-radius: 10px;    
+    width: 10rem;
+    height: 3rem;
+    box-shadow: 3px 5px 10px 0 #00000054;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: 1s ease;
+}
+
+#btn-abrir:hover {
+    background: #38d34b;
+    box-shadow: 3px 5px 10px 0 #006811;
+}
+
+#disabled {
+    filter: grayscale(1);
+}
+
+#content-red-shirts {
+    background-color: var(--squarered);
+    width: 100%;
+    height: .2rem;
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 480px) {
+
+    #select-teams {
+    margin: 3rem 0;
+    }
+    
+    .brasileirao, .premier-league, .selecoes {
+    width: 5rem;
+    height: 5rem;
+    margin: 0;
+    }
+
+    .subirletra-brasileirao {
+    font-size: 9pt;
+    margin: -6rem 0 0 .7rem;
+    }
+
+    .subirletra-brasileirao:hover {
+        margin: 0;
+    }
+
+    
+    #subirletra-pl:hover {
+        margin: -14rem 0 0 3.5rem;
+    }
+    
+    .subirletra-pl {
+        font-size: 9pt;
+        margin: -6rem 0 0 0;
+    }
+    
+    .subirletra-selecoes {
+        font-size: 9pt;
+        margin: -6rem 0 0 1rem;
+    }
+
+    #brasileirao-active {
+        width: 100%;
+        height: 2.6rem;
+        margin: -5rem 0 0 0;
+        z-index: 2;
+    }
+
+    #brasileirao-white {
+        height: 2.5rem;
+    }
+
+    #fla, #flu, #sccp, #sep, #spfc, #santos, #redbull {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+
+    #brasileirao-content-spfc, #brasileirao-content-fla, #brasileirao-content-flu, #brasileirao-content-sccp, #brasileirao-content-sep, #brasileirao-content-sfc, #brasileirao-content-redbull {
+        height: 36vh;
+        margin-top: 0.7rem;
+    }
+
+    #content-img-team-spfc-quadrado, #content-img-team-fla-quadrado, #content-img-team-flu-quadrado, #content-img-team-sccp-quadrado, #content-img-team-sep-quadrado, #content-img-team-sfc-quadrado, #content-img-team-redbull-quadrado {
+        width: 5rem;
+        height: 9rem;
+    }
+
+    #content-img-team-spfc, #content-img-team-fla, #content-img-team-flu, #content-img-team-sccp, #content-img-team-sep, #content-img-team-sfc, #content-img-team-redbull {
+        padding-top: 0;
+    }
+
+    .highlight-shirts-squares {
+        width: 100%;
+        height: 8rem;
+    }
+
+    #btn-abrir {
+        font-size: 8pt;
+        font-weight: 400;
+        width: 3rem;
+        height: 2rem;
+        margin: .2rem 0;
+        position: relative;
+    }
+
+
+
+
+}

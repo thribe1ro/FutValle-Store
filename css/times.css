@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+#quadradoMaior {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: 30vh;
+    margin: 5rem auto;
+}
+
+#selecionarLiga {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 15vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#tamanhoLigas {
+    display: flex;
+    width: 12rem;
+    height: 12rem;
+}
+
+#abrirTexto {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#selectLigaTexto {
+    margin: auto;
+    color: #fff;
+    font-family: var(--fontmain);
+}
+
+/* CHECKED LIGAS */
+
+#iconBrasileirao {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/icons/assets/brasileirao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    appearance: none;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+#iconPL {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/icons/assets/premier-league.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    appearance: none;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+#iconBrasileirao:checked, #iconPL:checked {
+    margin-top: -1rem;
+    background-size: 101%;
+}
+
+/* ========================================================================================================= */
+
+#selecionarTimes {
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 15vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#tamanhoTimes {
+    display: flex;
+    width: 6.5rem;
+    height: 6.5rem;
+}
+
+/* CHECKED TIMES */
+
+#flamengo {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/icons/assets/flamengo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    appearance: none;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+#corinthians {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/icons/assets/corinthians.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    appearance: none;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+#palmeiras {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/icons/assets/palmeiras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    appearance: none;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+#saopaulo {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/icons/assets/saopaulofc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    appearance: none;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+#sfc {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/icons/assets/santos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    appearance: none;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+#flamengo:checked, #corinthians:checked, #palmeiras:checked, #saopaulo:checked, #sfc:checked {
+    margin-top: -1rem;
+}
+
+/* ========================================================================================================= */
+
+#camisasTimes {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: 55vh;
+    margin: 2rem auto;
+    padding: auto;
+    background: #e5e5e5;
+    border-radius: 10px;
+}
+
+/* QUADRADO CORINTHIANS */
+#quadradoCorinthians {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    background: #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 6px #00000052;
+}
+
+/* ========================================================================================================= */
+
+/* QUADRADO FLAMENGO */
+#quadradoFlamengo {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    background: #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 6px #00000052;
+}
+
+/* ========================================================================================================= */
+
+/* QUADRADO PALMEIRAS */
+#quadradoPalmeiras {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    background: #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 6px #00000052;
+}
+
+/* ========================================================================================================= */
+
+/* QUADRADO SÃO PAULO */
+#quadradoSaoPaulo {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    background: #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 6px #00000053;
+}
+
+/* ========================================================================================================= */
+
+/* QUADRADO SANTOS */
+#quadradoSantos {
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: auto;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    background: #e5e5e5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 6px #00000052;
+}
+
+/* ========================================================================================================= */
+
+
+#camisaQuadroUm,
+#camisaQuadroDois,
+#camisaQuadroTres,
+#camisaQuadroQuatro {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 35rem;
+    background: #fff;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+#camisaQuadroUm:hover,
+#camisaQuadroDois:hover,
+#camisaQuadroTres:hover,
+#camisaQuadroQuatro:hover {
+    margin-top: -.5rem;
+    box-shadow: 0px 10px 15px 0 #00000054;
+}
+
+#imagemCamisaUm img, #imagemCamisaDois img,#imagemCamisaTres img, #imagemCamisaQuatro img,#imagemCamisaCinco img, #imagemCamisaSeis img {
+    width: 20rem;
+    height: 40vh;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+#vermelhoCamisaUm, #vermelhoCamisaDois, #vermelhoCamisaTres, #vermelhoCamisaQuatro, #vermelhoCamisaCinco, #vermelhoCamisaSeis,#vermelhoCamisaSete, #vermelhoCamisaOito,#vermelhoCamisaNove, #vermelhoCamisaDez,#vermelhoCamisaOnze, #vermelhoCamisaDoze {
+    width: 20rem;
+    height: 2px;
+    background: #ff0000;
+    margin-top: -.4rem;
+}
+
+#infoCamisaUm, #infoCamisaDois, #infoCamisaTres, #infoCamisaQuatro, #infoCamisaCinco, #infoCamisaSeis, #infoCamisaSete, #infoCamisaOito, #infoCamisaNove, #infoCamisaDez, #infoCamisaOnze, #infoCamisaDoze {
+    width: 20rem;
+    
+}
+
+#textoCamisaUm h2, #textoCamisaDois h2, #textoCamisaTres h2, #textoCamisaQuatro h2, #textoCamisaCinco h2, #textoCamisaSeis h2, #textoCamisaSete h2, #textoCamisaOito h2, #textoCamisaNove h2, #textoCamisaDez h2, #textoCamisaOnze h2, #textoCamisaDoze h2 {
+    text-align: center;
+    font-size: 17pt;
+    color: #000;
+    font-family: "Archivo", sans-serif;
+    font-weight: 100;
+}
+
+#valoresCamisaUm, #valoresCamisaDois, #valoresCamisaTres, #valoresCamisaQuatro, #valoresCamisaCinco, #valoresCamisaSeis, #valoresCamisaSete, #valoresCamisaOito, #valoresCamisaNove, #valoresCamisaDez, #valoresCamisaOnze, #valoresCamisaDoze  {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 15vh;
+}
+
+#valorCamisaUm, #valorCamisaDois, #valorCamisaTres, #valorCamisaQuatro, #valorCamisaCinco, #valorCamisaSeis, #valorCamisaSete, #valorCamisaOito, #valorCamisaNove, #valorCamisaDez, #valorCamisaOnze, #valorCamisaDoze  {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem auto;
+}
+
+#valorCamisaUm p, #valorCamisaDois p, #valorCamisaTres p, #valorCamisaQuatro p, #valorCamisaCinco p, #valorCamisaSeis p, #valorCamisaSete p, #valorCamisaOito p, #valorCamisaNove p, #valorCamisaDez p, #valorCamisaOnze p, #valorCamisaDoze p  {
+    text-align: center;
+    color: #000;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 100;
+}
+
+#textoMenor {
+    font-size: 15pt;
+}
+
+#textoMaior {
+    font-size: 30pt;
+}
+
+#botaoCamisaUm, #botaoCamisaDois, #botaoCamisaTres, #botaoCamisaQuatro, #botaoCamisaCinco, #botaoCamisaSeis, #botaoCamisaSete, #botaoCamisaOito, #botaoCamisaNove, #botaoCamisaDez, #botaoCamisaOnze, #botaoCamisaDoze  {
+    display: flex;
+    width: 20rem;
+}
+
+#botaoCamisaUm button, #botaoCamisaDois button, #botaoCamisaTres button, #botaoCamisaQuatro button, #botaoCamisaCinco button, #botaoCamisaSeis button, #botaoCamisaSete button, #botaoCamisaOito button, #botaoCamisaNove button, #botaoCamisaDez button, #botaoCamisaOnze button, #botaoCamisaDoze button {
+    font-size: 15pt;
+    border: solid 0;
+    border-radius: 50rem;
+    background-color: #24284F;
+    width: 10rem;
+    height: 3rem;
+    box-shadow: 3px 5px 10px 0 #00000054;
+    cursor: pointer;
+    margin: 0 auto;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+#botaoCamisaUm button:hover, #botaoCamisaDois button:hover, #botaoCamisaTres button:hover, #botaoCamisaQuatro button:hover, #botaoCamisaCinco button:hover, #botaoCamisaSeis button:hover, #botaoCamisaSete button:hover, #botaoCamisaOito button:hover, #botaoCamisaNove button:hover, #botaoCamisaDez button:hover, #botaoCamisaOnze button:hover, #botaoCamisaDoze button:hover {
+    background: #38d34b;
+    box-shadow: 3px 5px 10px 0 #006811;
+}
+
+@media screen and (max-width: 480px) { 
+    
+    #abrirTexto {
+        margin-top: 5rem;
+    }
+
+    #selectLigaTexto {
+        font-size: 14pt;
+    }
+    
+    #selecionarLiga {
+        width: 80%;
+    }
+
+    #tamanhoLigas {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    #tamanhoTimes {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    /* CAMISAS CORINTHIANS DENTRO DE CORINTHIANS */
+
+    #quadradoCorinthians, #quadradoFlamengo, #quadradoPalmeiras, #quadradoSaoPaulo, #quadradoSantos {
+        height: auto;
+    }
+
+    #camisaQuadroUm, #camisaQuadroDois, #camisaQuadroTres, #camisaQuadroQuatro {
+        width: 15rem;
+        height: 25rem;
+    }
+
+    #imagemCamisaUm img, #imagemCamisaDois img, #imagemCamisaTres img, #imagemCamisaQuatro img, #imagemCamisaCinco img, #imagemCamisaSeis img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    #vermelhoCamisaUm, #vermelhoCamisaDois, #vermelhoCamisaTres, #vermelhoCamisaQuatro, #vermelhoCamisaCinco, #vermelhoCamisaSeis, #vermelhoCamisaSete, #vermelhoCamisaOito, #vermelhoCamisaNove, #vermelhoCamisaDez, #vermelhoCamisaOnze, #vermelhoCamisaDoze {
+       display: none;
+    }
+
+    #infoCamisaUm, #infoCamisaDois, #infoCamisaTres, #infoCamisaQuatro, #infoCamisaCinco, #infoCamisaSeis, #infoCamisaSete, #infoCamisaOito, #infoCamisaNove, #infoCamisaDez, #infoCamisaOnze, #infoCamisaDoze {
+        width: 15rem;
+        height: 10rem;
+    }
+    
+    #textoCamisaUm h2, #textoCamisaDois h2, #textoCamisaTres h2, #textoCamisaQuatro h2, #textoCamisaCinco h2, #textoCamisaSeis h2, #textoCamisaSete h2, #textoCamisaOito h2, #textoCamisaNove h2, #textoCamisaDez h2, #textoCamisaOnze h2, #textoCamisaDoze h2 {
+        font-size: 14pt;
+    }
+
+    #valoresCamisaUm, #valoresCamisaDois, #valoresCamisaTres, #valoresCamisaQuatro, #valoresCamisaCinco, #valoresCamisaSeis, #valoresCamisaSete, #valoresCamisaOito, #valoresCamisaNove, #valoresCamisaDez, #valoresCamisaOnze, #valoresCamisaDoze {
+        width: 15rem;
+        height: 15vh;
+    }
+
+    #valorCamisaUm, #valorCamisaDois, #valorCamisaTres, #valorCamisaQuatro, #valorCamisaCinco, #valorCamisaSeis, #valorCamisaSete, #valorCamisaOito, #valorCamisaNove, #valorCamisaDez, #valorCamisaOnze, #valorCamisaDoze {
+        margin: .5rem auto;
+    }
+
+    #textoMenor {
+        font-size: 10pt;
+    }
+
+    #textoMaior {
+        font-size: 20pt;
+    }
+
+    #botaoCamisaUm, #botaoCamisaDois, #botaoCamisaTres, #botaoCamisaQuatro, #botaoCamisaCinco, #botaoCamisaSeis, #botaoCamisaSete, #botaoCamisaOito, #botaoCamisaNove, #botaoCamisaDez, #botaoCamisaOnze, #botaoCamisaDoze {
+        width: 15rem;
+    }
+    
+    #botaoCamisaUm button, #botaoCamisaDois button, #botaoCamisaTres button, #botaoCamisaQuatro button, #botaoCamisaCinco button, #botaoCamisaSeis button, #botaoCamisaSete button, #botaoCamisaOito button, #botaoCamisaNove button, #botaoCamisaDez button, #botaoCamisaOnze button, #botaoCamisaDoze button {
+        width: 6rem;
+        height: 2rem;
+        font-size: 9pt;
+    }
+
+    /* ======================================================================================================================= */
+}

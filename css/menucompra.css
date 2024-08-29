@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
+}
+
+:root {
+    --fontcolor: #24284F;
+    --fontmain: "Sarabun", sans-serif;
+    --squarewhite: #EEEEEE;
+    --squarered: #ff0000;
+    --backgroundcolor: #24284F;
+    --fontmain: "Sarabun", sans-serif;
+    --colortext: #eeeeee;
+    --fontsell: "Archivo", sans-serif;
+    --btn-active: #38d34b;
+}
+
+.TelaAtiva1 , .TelaAtiva2 , .TelaAtiva3 , .TelaAtiva4 , .TelaAtiva5 {
+    width: 100%;
+}
+
+.QuadradoTelaVenda1 , .QuadradoTelaVenda2 , .QuadradoTelaVenda3 , .QuadradoTelaVenda4 , .QuadradoTelaVenda5 {
+    width: 70%;
+    height: 50rem;
+    margin: -150rem auto;
+    display: none;
+    z-index: 2;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+#QuadradoTelaVenda1 , #QuadradoTelaVenda2 , #QuadradoTelaVenda3 , #QuadradoTelaVenda4 , #QuadradoTelaVenda5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+#selecaoIcones1 , #selecaoIcones2 , #selecaoIcones3 , #selecaoIcones4 , #selecaoIcones5 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+
+#iconePequeno {
+    width: 5rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#iconeGrande1, #iconeGrande2, #iconeGrande3, #iconeGrande4, #iconeGrande5 {
+    width: 30rem;
+    height: 40rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+
+#caixa {
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.QuadradoValoresTexto {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    margin: 1rem 0;
+}
+
+#TituloPrincipal {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20pt;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#TituloSecundario, #TituloSecundario1 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 15pt;
+}
+
+#TituloSecundario1::before {
+    display: block;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    content: "";
+    background-image: url(/image/icons/verify.png);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    margin: -.2rem 0 0 -2rem;
+}
+
+#TituloTamanhos {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20pt;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+.IconesTexto {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    text-align: start;
+}
+
+#DinheiroParte2 {
+    font-size: 40pt;
+    font-weight: 500;
+    font-family: var(--fontmain);
+    color: #fff;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+#DinheiroParte1, #DinheiroParte3 {
+    font-size: 15pt;
+    font-weight: 500;
+    font-family: var(--fontmain);
+    color: #fff;
+    height: 2rem;
+}
+
+#textoBotaoComprarSCCP1, #textoBotaoComprarSCCP2, #textoBotaoComprarSCCP3, #textoBotaoComprarSCCP4, #textoBotaoComprarFLA1, #textoBotaoComprarSEP1, #textoBotaoComprarSEP2, #textoBotaoComprarSPFC1, #textoBotaoComprarSPFC2, #textoBotaoComprarSFC1 {
+    color: var(--colortext);
+    font-family: var(--fontsell);
+    font-size: 13pt;
+    font-weight: 600;
+}
+
+#btnComprar {
+    position: relative;
+    font-size: 15pt;
+    font-weight: 400;
+    color: var(--colortext);
+    font-family: var(--fontsell);
+    background: var(--backgroundcolor);
+    border: solid 0;
+    border-radius: 50rem;    
+    width: 10rem;
+    height: 3rem;
+    box-shadow: 3px 5px 10px 0 #00000054;
+    cursor: pointer;
+    margin: 0 0 2rem 0;
+    transition: 1s ease;
+}
+
+#btnComprar:hover {
+    background: var(--btn-active);
+    box-shadow: 3px 5px 10px 0 #006811;
+}
+
+#btnEncomendar {
+    position: relative;
+    font-size: 15pt;
+    font-weight: 400;
+    color: var(--colortext);
+    font-family: var(--fontsell);
+    background: var(--backgroundcolor);
+    border: solid 0;
+    border-radius: 50rem;    
+    width: 10rem;
+    height: 3rem;
+    box-shadow: 3px 5px 10px 0 #00000054;
+    cursor: pointer;
+    margin: 0 0 2rem 0;
+    transition: 1s ease;
+}
+
+#btnEncomendar:hover {
+    background: var(--btn-active);
+    box-shadow: 3px 5px 10px 0 #006811;
+}
+
+#x {
+    margin: 1rem 0 0 95%;
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 7px solid #000000;
+    border-radius: 20px;
+    background:
+    linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+    linear-gradient(135deg, #000000 0%,#000000 43%,#fff 45%,#fff 55%,#000000 57%,#000000 100%);
+    cursor: pointer;
+}
+
+.IconesTamanho input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #808080;
+    border-radius: 50%;
+    transition: border-color 0.3s;
+    text-align: center;
+    margin: 2rem 0 0 2rem;
+    padding: .3rem 0 0 .1rem;
+    cursor: pointer;
+}
+
+.IconesTamanho input[type="radio"]:checked {
+    border-color: #ff0000;
+}
+
+.IconesTamanho input[type="radio"]:checked::before {
+    opacity: 1;
+}
+
+.IconesTamanho input[type="radio"]:disabled {
+    background:
+    linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+    linear-gradient(135deg, #ff0000 0%,#ff0000 43%,#fff 45%,#fff 55%,#ff0000 57%,#ff0000 100%);
+    border-color: #ff0000;
+    color: transparent;
+}
+
+.IconesTamanho input[type="radio"]:nth-of-type(1)::before {
+    content: "P";
+}
+
+.IconesTamanho input[type="radio"]:nth-of-type(2)::before {
+    content: "M";
+}
+
+.IconesTamanho input[type="radio"]:nth-of-type(3)::before {
+    content: "G";
+}
+
+.IconesTamanho input[type="radio"]:nth-of-type(4)::before {
+    content: "GG";
+}
+
+.IconesTamanho input[type="radio"]:nth-of-type(5)::before {
+    content: "XG";
+}
+
+#selecionarTamanho {
+    display: none;
+    width: 20rem;
+    height: 5rem;
+    margin: 1rem 0 0 5rem;
+    text-align: center;
+}
+
+#selecionarTamanho h2 {
+    font-weight: 700;
+    font-size: 15pt;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ea1f1f;
+}
+
+/* MENU COMPRA CORINTHIANS */
+.TelaAtivaCorinthians1, .TelaAtivaCorinthians2, .TelaAtivaCorinthians3, .TelaAtivaCorinthians4 {
+    width: 100%;
+}
+
+.TelaAtivaVendaCorinthians1, .TelaAtivaVendaCorinthians2, .TelaAtivaVendaCorinthians3, .TelaAtivaVendaCorinthians4 {
+    width: 70%;
+    height: 50rem;
+    margin: -150rem auto;
+    display: none;
+    z-index: 2;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+#TelaAtivaVendaCorinthians1, #TelaAtivaVendaCorinthians2, #TelaAtivaVendaCorinthians3, #TelaAtivaVendaCorinthians4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+#iconeGrandeCorinthians1, #iconeGrandeCorinthians2, #iconeGrandeCorinthians3, #iconeGrandeCorinthians4 {
+    width: 30rem;
+    height: 40rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+
+#selecionarTamanhoCorinthians1, #selecionarTamanhoCorinthians2, #selecionarTamanhoCorinthians3, #selecionarTamanhoCorinthians4 {
+    display: none;
+    width: 20rem;
+    height: 5rem;
+    margin: 1rem 0 0 5rem;
+    text-align: center;
+}
+
+#selecionarTamanhoCorinthians1 h2, #selecionarTamanhoCorinthians2 h2, #selecionarTamanhoCorinthians3 h2, #selecionarTamanhoCorinthians4 h2 {
+    font-weight: 700;
+    font-size: 15pt;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ea1f1f;    
+}
+
+/* ====================================================================================================================================== */
+
+/* MENU COMPRA FLAMENGO */
+.TelaAtivaFlamengo1 {
+    width: 100%;
+}
+
+.TelaAtivaVendaFlamengo1 {
+    width: 70%;
+    height: 50rem;
+    margin: -150rem auto;
+    display: none;
+    z-index: 2;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+#TelaAtivaVendaFlamengo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+#iconeGrandeFlamengo1 {
+    width: 30rem;
+    height: 40rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+
+#selecionarTamanhoFlamengo1 {
+    display: none;
+    width: 20rem;
+    height: 5rem;
+    margin: 1rem 0 0 5rem;
+    text-align: center;
+}
+
+#selecionarTamanhoFlamengo1 h2 {
+    font-weight: 700;
+    font-size: 15pt;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ea1f1f;    
+}
+
+/* ====================================================================================================================================== */
+
+/* MENU COMPRA PALMEIRAS */
+.TelaAtivaPalmeiras1, .TelaAtivaPalmeiras2 {
+    width: 100%;
+}
+
+.TelaAtivaVendaPalmeiras1, .TelaAtivaVendaPalmeiras2 {
+    width: 70%;
+    height: 50rem;
+    margin: -150rem auto;
+    display: none;
+    z-index: 2;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+#TelaAtivaVendaPalmeiras1, #TelaAtivaVendaPalmeiras2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+#iconeGrandePalmeiras1, #iconeGrandePalmeiras2 {
+    width: 30rem;
+    height: 40rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+
+#selecionarTamanhoPalmeiras1, #selecionarTamanhoPalmeiras2 {
+    display: none;
+    width: 20rem;
+    height: 5rem;
+    margin: 1rem 0 0 5rem;
+    text-align: center;
+}
+
+#selecionarTamanhoPalmeiras1 h2, #selecionarTamanhoPalmeiras2 h2 {
+    font-weight: 700;
+    font-size: 15pt;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ea1f1f;    
+}
+
+/* ====================================================================================================================================== */
+
+/* MENU COMPRA SAO PAULO */
+.TelaAtivaSaoPaulo1, .TelaAtivaSaoPaulo2 {
+    width: 100%;
+}
+
+.TelaAtivaVendaSaoPaulo1, .TelaAtivaVendaSaoPaulo2 {
+    width: 70%;
+    height: 50rem;
+    margin: -150rem auto;
+    display: none;
+    z-index: 2;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+#TelaAtivaVendaSaoPaulo1, #TelaAtivaVendaSaoPaulo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+#iconeGrandeSaoPaulo1, #iconeGrandeSaoPaulo2 {
+    width: 30rem;
+    height: 40rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+
+#selecionarTamanhoSaoPaulo1, #selecionarTamanhoSaoPaulo2 {
+    display: none;
+    width: 20rem;
+    height: 5rem;
+    margin: 1rem 0 0 5rem;
+    text-align: center;
+}
+
+#selecionarTamanhoSaoPaulo1 h2, #selecionarTamanhoSaoPaulo2 h2 {
+    font-weight: 700;
+    font-size: 15pt;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ea1f1f;    
+}
+
+/* ====================================================================================================================================== */
+
+/* MENU COMPRA SANTOS */
+
+.TelaAtivaSantos1 {
+    width: 100%;
+}
+
+.TelaAtivaVendaSantos1 {
+    width: 70%;
+    height: 50rem;
+    margin: -150rem auto;
+    display: none;
+    z-index: 2;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+#TelaAtivaVendaSantos1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+#iconeGrandeSantos1 {
+    width: 30rem;
+    height: 40rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+}
+
+#selecionarTamanhoSantos1 {
+    display: none;
+    width: 20rem;
+    height: 5rem;
+    margin: 1rem 0 0 5rem;
+    text-align: center;
+}
+
+#selecionarTamanhoSantos1 h2 {
+    font-weight: 700;
+    font-size: 15pt;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ea1f1f;    
+}
+
+
+/* ====================================================================================================================================== */
+
+/* CELULAR */
+
+@media screen and (max-width: 480px) {
+    .QuadradoTelaVenda1, .QuadradoTelaVenda2, .QuadradoTelaVenda3, .QuadradoTelaVenda4, .QuadradoTelaVenda5 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #QuadradoTelaVenda1, #QuadradoTelaVenda2, #QuadradoTelaVenda3, #QuadradoTelaVenda4, #QuadradoTelaVenda5 {
+        margin: 0;
+        width: 100%;
+    }
+    
+    #TituloPrincipal {
+        font-size: 15pt;
+    }
+
+    #DinheiroParte1, #DinheiroParte3 {
+        font-size: 20pt;
+    }
+
+    #DinheiroParte2 {
+        font-size: 40pt;
+    }
+
+    #btnComprar {
+        font-size: 9pt;
+        width: 6rem;
+        height: 2rem;
+    }
+
+    .IconesTexto {
+        width: 100%;
+    }
+
+    #TituloSecundario, #TituloSecundario1 {
+        font-size: 9pt;
+    }
+
+    #TituloSecundario1::before {
+        margin: -.2rem 0 0 0;
+    }
+
+    #TituloTamanhos {
+        font-size: 15pt;
+    }
+
+    .IconesTamanho input[type="radio"] {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 9pt;
+        padding: .1rem;
+    }
+
+    #selecaoIcones1, #selecaoIcones2, #selecaoIcones3, #selecaoIcones4, #selecaoIcones5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1rem 0rem;
+    }
+
+    #iconePequeno {
+        width: 2rem;
+        height: 3rem;
+    }
+
+    #caixa {
+        display: flex;
+        width: 100%;
+    }
+
+    #iconeGrande1, #iconeGrande2, #iconeGrande3, #iconeGrande4, #iconeGrande5 {
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+    }
+    
+    #x {
+        margin: -47rem 0 0 89%;
+    }
+
+    /* CORINTHIANS */
+    .TelaAtivaVendaCorinthians1, .TelaAtivaVendaCorinthians2, .TelaAtivaVendaCorinthians3, .TelaAtivaVendaCorinthians4 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #TelaAtivaVendaCorinthians1, #TelaAtivaVendaCorinthians2, #TelaAtivaVendaCorinthians3, #TelaAtivaVendaCorinthians4 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #textoBotaoComprarSCCP1, #textoBotaoComprarSCCP2, #textoBotaoComprarSCCP3, #textoBotaoComprarSCCP4, #textoBotaoComprarFLA1, #textoBotaoComprarSEP1, #textoBotaoComprarSEP2, #textoBotaoComprarSPFC1, #textoBotaoComprarSPFC2, #textoBotaoComprarSFC1 {
+        font-size: 9pt;
+        margin: auto;
+    }
+
+
+    #iconeGrandeCorinthians1, #iconeGrandeCorinthians2, #iconeGrandeCorinthians3, #iconeGrandeCorinthians4 {
+        width: 10rem;
+        height: 10rem;
+        margin: 0 auto;
+    }
+
+    #selecionarTamanhoCorinthians1, #selecionarTamanhoCorinthians2, #selecionarTamanhoCorinthians3, #selecionarTamanhoCorinthians4 {
+        width: 100%;
+        margin: 0;
+    }
+
+    #selecionarTamanhoCorinthians1 h2, #selecionarTamanhoCorinthians2 h2, #selecionarTamanhoCorinthians3 h2, #selecionarTamanhoCorinthians4 h2 {
+        font-size: 12pt;
+        margin: auto;
+    }
+}

@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
+
+:root {
+    --squarewhite: #EEEEEE;
+    --squarered: #ff0000;
+    --backgroundcolor: #24284F;
+    --fontmain: "Sarabun", sans-serif;
+    --colortext: #eeeeee;
+    --fontsell: "Archivo", sans-serif;
+    --btn-active: #38d34b;
+    --branco: #fff;
+    --font-times : "Freeman", sans-serif;
+    --font-time-color: #fff;
+}
+
+.content-active-fla, .content-active-flu, .content-active-sccp, .content-active-sep, .content-active-spfc, .content-active-sfc, .content-active-redbull {
+    width: 100%;
+}
+
+.content-active-team-fla-casa, .content-active-team-fla-fora-casa, .content-active-team-fla-fora2-casa, .content-active-team-flu-casa, .content-active-team-flu-fora-casa, .content-active-team-flu-fora2-casa, .content-active-team-sccp-casa, .content-active-team-sccp-fora-casa, .content-active-team-sccp-fora2-casa, .content-active-team-sep-casa, .content-active-team-sep-fora-casa, .content-active-team-sep-fora2-casa, .content-active-team-spfc-casa, .content-active-team-spfc-fora-casa, .content-active-team-spfc-fora2-casa, .content-active-team-sfc-casa, .content-active-team-sfc-fora-casa, .content-active-team-sfc-fora2-casa, .content-active-team-redbull-casa, .content-active-team-redbull-fora-casa, .content-active-team-redbull-fora2-casa {
+    width: 70%;
+    height: 46rem;
+    margin: -65rem auto 0;
+    display: none;
+    z-index: 2;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    border: 1px solid #ffffff2e;
+    background: #0000004d;
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    transition: 1s;
+}
+
+#content-active-team-fla-info, #content-active-team-flu-info, #content-active-team-sccp-info, #content-active-team-sep-info, #content-active-team-spfc-info, #content-active-team-sfc-info, #content-active-team-redbull-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 0 0 -3rem;
+    text-align: center;
+}
+
+#content-active-team-fla-casa-icon, #content-active-team-flu-casa-icon, #content-active-team-sccp-casa-icon, #content-active-team-sep-casa-icon, #content-active-team-spfc-casa-icon, #content-active-team-sep-casa-icon, #content-active-team-sfc-casa-icon, #content-active-team-redbull-casa-icon  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    justify-content: space-evenly;
+}
+
+#icon-little-1 {
+    width: 5rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px 5px #00000059;
+    background-size: cover;
+}
+
+#icon-big-h1, #icon-big-h2, #icon-big-h3, #icon-big-h4, #icon-big-h5, #icon-big-flu1, #icon-big-flu2, #icon-big-flu3, #icon-big-sccp1, #icon-big-sccp2, #icon-big-sccp3, #icon-big-sep1, #icon-big-sep2, #icon-big-sep3, #icon-big-spfc1, #icon-big-spfc2, #icon-big-spfc3, #icon-big-sfc1, #icon-big-sfc2, #icon-big-sfc3, #icon-big-redbull1, #icon-big-redbull2, #icon-big-redbull3 {
+    width: 30rem;
+    height: 40rem;
+    margin-top: 5rem;
+    border-radius: 10px;
+    background-size: cover;    
+}
+
+#box {
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+#content-active-value-text {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    width: 20rem;
+    align-items: center;
+    height: 6rem;
+}
+
+#text-fla, #text-flu, #text-sccp, #text-sep, #text-spfc, #text-sfc, #text-redbull {
+    margin-top: 0rem;
+    font-weight: 700;
+    font-size: 20pt;
+    color: #fff;
+    text-shadow: 2px 2px 6px #000;
+}
+
+#resultado-tamanho-FLA1, #resultado-tamanho-FLA2, #resultado-tamanho-FLA3, #resultado-tamanho-FLU1, #resultado-tamanho-FLU2, #resultado-tamanho-FLU3, #resultado-tamanho-SCCP1, #resultado-tamanho-SCCP2, #resultado-tamanho-SCCP3, #resultado-tamanho-SEP1, #resultado-tamanho-SEP2, #resultado-tamanho-SEP3, #resultado-tamanho-SPFC1, #resultado-tamanho-SPFC2, #resultado-tamanho-SPFC3, #resultado-tamanho-SFC1, #resultado-tamanho-SFC2, #resultado-tamanho-SFC3, #resultado-tamanho-REDBULL1, #resultado-tamanho-REDBULL2, #resultado-tamanho-REDBULL3 {
+    margin-top: 0rem;
+    font-weight: 700;
+    font-size: 19pt;
+    color: #fff;
+    text-shadow: 2px 2px 6px #000;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--fontmain);
+}
+
+#resultado-tamanho-FLA1::before, #resultado-tamanho-FLA2::before, #resultado-tamanho-FLA3::before, #resultado-tamanho-FLU1::before, #resultado-tamanho-FLU2::before, #resultado-tamanho-FLU3::before, #resultado-tamanho-SCCP1::before, #resultado-tamanho-SCCP2::before, #resultado-tamanho-SCCP3::before, #resultado-tamanho-SEP1::before, #resultado-tamanho-SEP2::before, #resultado-tamanho-SEP3::before, #resultado-tamanho-SPFC1::before, #resultado-tamanho-SPFC2::before, #resultado-tamanho-SPFC3::before, #resultado-tamanho-SFC1::before, #resultado-tamanho-SFC2::before, #resultado-tamanho-SFC3::before, #resultado-tamanho-REDBULL1::before, #resultado-tamanho-REDBULL2::before, #resultado-tamanho-REDBULL3::before  {
+    content: "TAMANHO: ";
+    margin-top: 0rem;
+    padding-right: 1rem;
+    font-weight: 600;
+    font-size: 17pt;
+    font-family: var(--fontmain);
+    color: #ffffff;
+    text-shadow: 2px 2px 6px #000000;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#text-fla-tailandia, #text-flu-tailandia, #text-sccp-tailandia, #text-sep-tailandia, #text-sfc-tailandia, #text-spfc-tailandia, #text-redbull-tailandia {
+    display: flex;
+    margin: auto;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 6px #000;
+}
+
+#text-fla-tailandia::before, #text-flu-tailandia::before, #text-sccp-tailandia::before, #text-sep-tailandia::before, #text-spfc-tailandia::before, #text-sfc-tailandia::before, #text-redbull-tailandia::before {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    content: " ";
+    background-image: url(/image/icons/verify.png);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    margin: -.2rem 0 0 -3rem;
+}
+
+.icon-and-tamanho {
+    margin-top: 1rem;
+}
+
+.icon-and-text {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1rem 0;
+}
+
+.content-active-value-text {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1rem 0 0;
+}
+
+h2 {
+    font-family: "Archivo", sans-serif;
+}
+
+#cash {
+    font-weight: 100;
+    font-size: 40pt;
+    font-weight: 500;
+    font-family: var(--fontmain);
+    color: #fff;
+}
+
+#sifrao, #centavos {
+    font-weight: 100;
+    font-size: 15pt;
+    font-weight: 500;
+    font-family: var(--fontmain);
+    color: #fff;
+}
+
+#btn-active-buy {
+    position: relative;
+    font-size: 15pt;
+    font-weight: 400;
+    color: var(--colortext);
+    font-family: var(--fontsell);
+    background: var(--backgroundcolor);
+    border: solid 0;
+    border-radius: 10px;    
+    width: 10rem;
+    height: 3rem;
+    box-shadow: 3px 5px 10px 0 #00000054;
+    cursor: pointer;
+    margin: 1rem 0 2rem 0;
+    transition: 1s ease;
+}
+
+#btn-active-buy:hover {
+    background: var(--btn-active);
+    box-shadow: 3px 5px 10px 0 #006811;
+}
+
+#x{
+    margin: 1rem 0 0 95%;
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 7px solid #000000;
+    border-radius: 20px;
+    background:
+    linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+    linear-gradient(135deg, #000000 0%,#000000 43%,#fff 45%,#fff 55%,#000000 57%,#000000 100%);
+    cursor: pointer;
+}
+
+   .icon-and-tamanho input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        background-color: #fff;
+        color: #000;
+        border: 3px solid #808080;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        text-align: center;
+        margin: 2rem 0 0 2rem;
+        padding: .3rem 0 0 .1rem;
+        cursor: pointer;
+}
+    
+   .icon-and-tamanho input[type="radio"]:checked {
+        border-color: #ff0000;
+        box-shadow: 0px 2px 10px 1px #ff0000;
+}
+    
+   .icon-and-tamanho input[type="radio"]:checked::before {
+        opacity: 1;
+}
+    
+   .icon-and-tamanho input[type="radio"]:disabled {
+        background:
+        linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 43%,#fff 45%,#fff 55%,rgba(0,0,0,0) 57%,rgba(0,0,0,0) 100%),
+        linear-gradient(135deg, #ff0000 0%,#ff0000 43%,#fff 45%,#fff 55%,#ff0000 57%,#ff0000 100%);
+        border-color: #ff0000;
+        color: transparent;
+}
+    
+   .icon-and-tamanho input[type="radio"]:nth-of-type(1)::before {
+        content: "P";
+}
+    
+   .icon-and-tamanho input[type="radio"]:nth-of-type(2)::before {
+        content: "M";
+}
+    
+   .icon-and-tamanho input[type="radio"]:nth-of-type(3)::before {
+        content: "G";
+}
+    
+   .icon-and-tamanho input[type="radio"]:nth-of-type(4)::before {
+        content: "GG";
+}
+    
+   .icon-and-tamanho input[type="radio"]:nth-of-type(5)::before {
+        content: "XG";
+}
+
+@media screen and (max-width: 480px) {
+    .content-active-team-fla-casa, .content-active-team-fla-fora-casa, .content-active-team-fla-fora2-casa, .content-active-team-flu-casa, .content-active-team-flu-fora-casa, .content-active-team-flu-fora2-casa, .content-active-team-sccp-casa, .content-active-team-sccp-fora-casa, .content-active-team-sccp-fora2-casa, .content-active-team-sep-casa, .content-active-team-sep-fora-casa, .content-active-team-sep-fora2-casa, .content-active-team-spfc-casa, .content-active-team-spfc-fora-casa, .content-active-team-spfc-fora2-casa, .content-active-team-sfc-casa, .content-active-team-sfc-fora-casa, .content-active-team-sfc-fora2-casa, .content-active-team-redbull-casa, .content-active-team-redbull-fora-casa, .content-active-team-redbull-fora2-casa {
+        flex-direction: column;
+        height: 33rem;
+        margin-top: -30rem;
+    }
+
+    #text-fla, #text-flu, #text-sccp, #text-sep, #text-spfc, #text-sfc, #text-redbull {
+        font-size: 10pt;
+    }
+
+    #resultado-tamanho-FLA1, #resultado-tamanho-FLA2, #resultado-tamanho-FLA3, #resultado-tamanho-FLU1, #resultado-tamanho-FLU2, #resultado-tamanho-FLU3, #resultado-tamanho-SCCP1, #resultado-tamanho-SCCP2, #resultado-tamanho-SCCP3, #resultado-tamanho-SEP1, #resultado-tamanho-SEP2, #resultado-tamanho-SEP3, #resultado-tamanho-SPFC1, #resultado-tamanho-SPFC2, #resultado-tamanho-SPFC3, #resultado-tamanho-SFC1, #resultado-tamanho-SFC2, #resultado-tamanho-SFC3, #resultado-tamanho-REDBULL1, #resultado-tamanho-REDBULL2, #resultado-tamanho-REDBULL3 {
+        font-size: 9pt;
+    }
+
+    #resultado-tamanho-FLA1::before, #resultado-tamanho-FLA2::before, #resultado-tamanho-FLA3::before, #resultado-tamanho-FLU1::before, #resultado-tamanho-FLU2::before, #resultado-tamanho-FLU3::before, #resultado-tamanho-SCCP1::before, #resultado-tamanho-SCCP2::before, #resultado-tamanho-SCCP3::before, #resultado-tamanho-SEP1::before, #resultado-tamanho-SEP2::before, #resultado-tamanho-SEP3::before, #resultado-tamanho-SPFC1::before, #resultado-tamanho-SPFC2::before, #resultado-tamanho-SPFC3::before, #resultado-tamanho-SFC1::before, #resultado-tamanho-SFC2::before, #resultado-tamanho-SFC3::before, #resultado-tamanho-REDBULL1::before, #resultado-tamanho-REDBULL2::before, #resultado-tamanho-REDBULL3::before {
+        font-size: 10pt;
+    }
+
+    #content-active-team-fla-info, #content-active-team-flu-info, #content-active-team-sccp-info, #content-active-team-sep-info, #content-active-team-spfc-info, #content-active-team-sfc-info, #content-active-team-redbull-info {
+        font-size: 5pt;
+        margin: 1rem auto 0;
+    }
+
+
+    #icon-little-1 {
+        width: 2rem;
+        height: 3rem;
+    }
+
+    .content-active-value-text {
+        margin: .5rem 0 0 0;
+    }
+
+    #icon-big-h1, #icon-big-h2, #icon-big-h3, #icon-big-h4, #icon-big-h5, #icon-big-flu1, #icon-big-flu2, #icon-big-flu3, #icon-big-sccp1, #icon-big-sccp2, #icon-big-sccp3, #icon-big-sep1, #icon-big-sep2, #icon-big-sep3, #icon-big-spfc1, #icon-big-spfc2, #icon-big-spfc3, #icon-big-sfc1, #icon-big-sfc2, #icon-big-sfc3, #icon-big-redbull1, #icon-big-redbull2, #icon-big-redbull3 {
+        width: 6rem;
+        height: 8rem;
+        margin: 0;
+    }
+
+    #content-active-team-fla-casa-icon, #content-active-team-flu-casa-icon, #content-active-team-sccp-casa-icon, #content-active-team-sep-casa-icon, #content-active-team-spfc-casa-icon, #content-active-team-sep-casa-icon, #content-active-team-sfc-casa-icon, #content-active-team-redbull-casa-icon {
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+
+    input[type="radio"] {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 1rem 1rem 0 0;
+        padding: 0;
+    }
+
+    #x {
+        margin: -30rem 0 0 .5rem;
+        position: absolute;
+    }
+
+    #cash {
+        font-size: 28pt;
+    }
+
+    #sifrao, #centavos {
+        font-size: 7pt;
+    }
+
+    #btn-active-buy {
+        font-size: 10pt;
+        width: 7rem;
+        height: 2rem;
+        margin: 0;
+    }
+
+    #text-fla-tailandia::before, #text-flu-tailandia::before, #text-sccp-tailandia::before, #text-sep-tailandia::before, #text-spfc-tailandia::before, #text-sfc-tailandia::before, #text-redbull-tailandia::before {
+        width: 1rem;
+        height: 1rem;
+        background-size: cover;
+        margin: -.2rem 0 0 -1.2rem;
+    }
+
+    .icon-and-tamanho {
+        margin: .5rem auto 0rem;
+    }
+
+    .icon-and-text {
+        margin: .5rem 0 0
+    }
+
+    #box {
+        margin: 0 auto;
+    }
+}
+

@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap')
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
+}
+
+:root {
+    --squarewhite: #EEEEEE;
+    --squarered: #ff0000;
+    --backgroundcolor: #24284F;
+    --fontmain: "Sarabun", sans-serif;
+    --colortext: #eeeeee;
+    --fontsell: "Archivo", sans-serif;
+    --btn-active: #38d34b;
+    --branco: #fff;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 30rem;
+    margin-top: 5rem;
+    z-index: 0;
+    background: #24284f;
+    background: -webkit-linear-gradient(0deg, #24284f 0%, rgba(255, 255, 255, 0.20) 50%, #24284f 100%);
+    background: linear-gradient(0deg, #24284f 0%, rgba(255, 255, 255, 0.20) 50%, #24284f 100%);
+}
+
+#produto1, #produto2, #produto3, #produto4 {
+    width: 22%;
+    height: 25rem;
+    margin: 3.5rem 2rem 0 0;
+    border-radius: 10px;
+}
+
+#produto1-img img, #produto2-img img, #produto3-img img, #produto4-img img {
+    width: 100%;
+    height: 18rem;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#produtos1-text-h2, #produtos2-text-h2, #produtos3-text-h2, #produtos4-text-h2 {
+    font: arial;
+    font-size: 20pt;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+}
+
+#produtos1-text-p, #produtos2-text-p, #produtos3-text-p, #produtos4-text-p {
+    font: arial;
+    font-size: 13pt;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+#socialmedia {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    background: #24284f;
+    background: -webkit-linear-gradient(0deg, #24284f 0%, rgba(255, 255, 255, 0.14) 50%, #24284f 100%);
+    background: linear-gradient(0deg, #24284f 0%, rgba(255, 255, 255, 0.14) 50%, #24284f 100%);
+}
+
+#socialmedia-text {
+    margin: 5rem auto 0;
+}
+
+#socialmedia-icons {
+    margin: 1rem auto;
+}
+
+#socialmedia-instagram {
+    width: 2rem;
+    height: 2rem;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#socialmedia-instagram:hover {
+    width: 2.5rem;
+    height: 2.5rem;
+    rotate: 360deg;
+}
+
+.highlight {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+#highlight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: var(--fontmain);
+    text-transform: uppercase;
+    color: var(--colortext);
+}
+
+.highlight-shirts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.content-one-shirts {
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    margin-right: 1rem;
+    height: 100%;
+    transition: 1s ease;
+}
+
+.content-one-shirts:hover {
+    margin-top: -.5rem;
+    border-radius: 0 0 .5rem .5rem;
+    box-shadow: 0px 10px 15px 0 #00000054;
+}
+
+#img-highlight-shirts {
+    position: relative;
+    background-color: #c43434;
+    border-radius: 10px 10px 0 0;
+    width: 20rem;
+    height: 25rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#content-red-shirts {
+    background-color: var(--squarered);
+    width: 20rem;
+    height: .2rem;
+}
+
+#content-value {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 11rem;
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.text-decoration {
+    margin-top: .1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 17pt;
+    font-family: var(--fontsell);
+}
+
+#content-value-active {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--branco);
+    width: 20rem;
+    align-items: center;
+    height: 6rem;
+}
+
+.content-value-text {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-family: var(--fontmain);
+}
+
+#cash {
+    font-weight: 100;
+    font-size: 40pt;
+    font-weight: 500;
+    font-family: var(--fontmain);
+    color: #000;
+}
+
+#sifrao, #centavos {
+    font-weight: 100;
+    font-size: 15pt;
+    font-weight: 500;
+    font-family: var(--fontmain);
+    color: #000;
+}
+
+#cash-prop {
+    font-weight: 100;
+    font-size: 40pt;
+    font-weight: 500;
+    font-family: var(--fontmain);
+    color: #fff;
+}
+
+#sifrao-prop, #centavos-prop {
+    font-weight: 100;
+    font-size: 15pt;
+    font-weight: 500;
+    font-family: var(--fontmain);
+    color: #fff;
+}
+
+#btn-buy {
+    position: relative;
+    font-size: 15pt;
+    font-weight: 400;
+    color: var(--colortext);
+    font-family: var(--fontsell);
+    background: var(--backgroundcolor);
+    border: solid 0;
+    border-radius: 50rem;    
+    width: 10rem;
+    height: 3rem;
+    box-shadow: 3px 5px 10px 0 #00000054;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: 1s ease;
+}
+
+#btn-buy:hover {
+    background: var(--btn-active);
+    box-shadow: 3px 5px 10px 0 #006811;
+}
+
+.highlight-shirts-squares {
+    width: 20rem;
+    height: 25rem;
+    border-radius: 10px 10px 0 0;
+}
+
+/* CELULAR */
+@media screen and (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+
+    section {
+        margin-top: 5rem;
+    }
+
+    .propaganda {
+        background-image: url(/image/icons/slides/slide4.png);
+        background-repeat: no-repeat;
+        background-size: 15rem 25rem;
+        width: 15rem;
+        height: 25rem;
+        margin: 5rem auto 0;
+        z-index: 0;
+    }
+
+    h1 {
+        font-size: 10pt;
+    }
+
+    img {
+        background-size: cover;
+    }
+
+    #img-highlight-shirts {
+    position: relative;
+    background-color: #c43434;
+    border-radius: 10px 10px 0 0rem;
+    width: 7rem;
+    height: 10rem;
+    z-index: 1;
+    cursor: pointer;
+    }
+
+    .highlight-shirts {
+        margin-top: 4rem;
+    }
+
+    .highlight-shirts-squares {
+        width: 100%;
+        height: 100%;
+    }
+
+    #content-red-shirts {
+        width: 7rem;
+    }
+
+    #content-value {
+        width: 7rem;
+        height: 6rem;
+    }
+
+    h2 {
+    font-size: 9pt;
+    text-align: center;
+    }
+
+    #content-value-active {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--branco);
+        width: 100%;
+        align-items: center;
+        border-radius: 0 0 .5rem .5rem;
+    }
+
+    #sifrao, #centavos {
+        font-weight: 100;
+        font-size: 8pt;
+    }
+
+    #cash {
+        font-weight: 100;
+        font-size: 20pt;
+    }
+
+    #btn-buy {
+        width: 6rem;
+        height: 1.5rem;
+        font-size: 9pt;
+    }
+
+    #highlight {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highlight {
+        margin: 0;
+    }
+
+    .content-one-shirts {
+        margin-right: .5rem;
+    }
+    
+    .produtos {
+        flex-direction: column;
+        margin-top: 48rem;
+    }
+
+    #produto1, #produto2, #produto3, #produto4 {
+        width: 65%;
+        height: 55vh;
+        margin: 5rem auto;
+    }
+
+    #produtos1-text-h2 {
+        font-size: 17pt;
+    }
+
+    #produtos1-text-p {
+        margin-top: 10px;
+    }
+
+    #socialmedia {
+        margin-top: 52rem;
+        height: 15rem;
+    }
+
+    
+}

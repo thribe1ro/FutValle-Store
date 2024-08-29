@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap')
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap')
+}
+
+:root {
+    --squarewhite: #EEEEEE;
+    --squarered: #ff0000;
+    --backgroundcolor: #24284F;
+    --fontmain: "Sarabun", sans-serif;
+    --font-times : "Freeman", sans-serif;
+    --font-main: "Archivo", sans-serif;
+}
+
+
+body {
+    height: 120vh;
+    background-color: var(--backgroundcolor);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.content-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    background-color: var(--squarewhite);
+    box-shadow: 0 1px 10px #000;
+    height: 15rem;
+}
+
+.content.rolagem {
+    height: 7rem;
+    margin-top: 0;
+    transition: 1s;
+}
+
+#logo.rolagem {
+    width: 5rem;
+    height: 5rem;
+    transition: 1s;
+}
+
+#logotipe {
+    margin: auto;
+}
+
+#logo {
+    width: 13rem;
+    height: 13rem;
+}
+
+
+#content-quemsomos {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+#quemsomos-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50rem;
+    height: 20rem;
+    text-align: left;
+    background: #fff;
+    border-radius: 10px;
+}
+
+#quemsomos-h2 {
+    width: 27rem;
+    margin: 2rem 0 0 3rem;
+    font-family: cursive;
+    font-size: 20pt;
+    color: #000;
+    text-shadow: 1px 1px 1px #0000000f;
+}
+
+#quemsomos-p {
+    text-align: center;
+    width: 27rem;
+    font-size: 11pt;
+    margin: 1.5rem 0 0 .5rem
+}
+
+#quemsomos-img {
+    position: absolute;
+    margin: 0 0 0 30rem;
+}
+
+#quemsomos-img img{
+    width: 20rem;
+    height: 20.1rem;
+    border-radius: 0 10px 10px 0;
+}
+
+
+
+/* CELULAR */
+
+@media screen and (max-width: 480px) {
+    #logo {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        background-color: var(--squarewhite);
+        box-shadow: 0 1px 10px #0000;
+        height: 10rem;
+    }
+
+    .content-menu {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #quemsomos-text {
+        width: 25rem;
+        margin: 1rem 0 0 .1rem;
+    }
+
+    #quemsomos-h2 {
+        width: 100%;
+        margin: .5rem 0 0 0;
+        font-size: 15pt;
+    }
+
+    #quemsomos-p {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+
+    #quemsomos-img {
+        display: none;
+    }
+    
+  }
